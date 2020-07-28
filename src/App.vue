@@ -1,17 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="row">
+    <div id="header-container" class="col m12 l12">
+    <header-component></header-component>
+    </div>
+    </div>
+    <div class="row" id="body">
+    <div class="col m8 l8">
+   <about-component></about-component>
+   </div>
+   <div class="col m4 l4">
+     <div class="row">
+        <links-component></links-component>
+     </div>
+    <div class="row">
+     <skills-component></skills-component>
+    </div>
+   </div>
+   </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import HeaderComponent from './components/HeaderComponent.vue'
+import AboutComponent from './components/AboutComponent.vue'
+import LinksComponent from './components/LinksComponent.vue'
+import WorkExperienceComponent from './components/WorkExperienceComponent.vue'
+import SkillsComponent from './components/SkillsComponent.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    AboutComponent,
+    LinksComponent,
+    WorkExperienceComponent,
+    SkillsComponent
   }
 }
 </script>
@@ -23,6 +47,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
+  margin-left:10px;
+
 }
+
+
+
 </style>
