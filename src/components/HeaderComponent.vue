@@ -5,39 +5,38 @@
       <div class="row" >
         <div class="col l4 m6 s12" >
             <div class="responsive-img " id="profile-image" >
-                <img src="https://s3.amazonaws.com/courage.gandasoft.com/images/profile.png" class="circle"/>
+                <img  :src="Header.ImageUrl" class="circle"/>
             </div>
         </div>
         <div class="col l8 m6 s12 right-align">
           <div class="card-stacked">
             <div class="card-content">
               <p>
-                <h2 class="header  blue-grey-text">Courage Mic Kosana</h2>
+                <h2 class="header  blue-grey-text">{{Header.Name}}</h2>
               <p>
               <p class="card-title  blue-grey-text lighten-3 row">
-                Software engineer | Solutions Architect | DevOps Engineer | Creator | Multi-Cloud Specialist
-              </p>
+                {{Header.Title}}   </p>
               <p class="row">
                 <div class="col l3 m3 s3">
-                  <a href="https://github.com/Gandasoft-freelancing">
+                  <a :href="Header.Sociallinks.Github.Url">
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-github-alt fa-3x blue-grey-text lighten-3 fa-inverse"></i>
                      </span> 
                   </a>
                 </div>
                 <div class="col l3 m3 s3">
-                 <a href="https://www.linkedin.com/in/mic-kosana-a6b96b93/"><i class="fa fa-linkedin fa-4x blue-grey-text lighten-3" aria-hidden="true"></i></a>
+                 <a :href="Header.Sociallinks.linkedIn.Url"><i class="fa fa-linkedin fa-4x blue-grey-text lighten-3" aria-hidden="true"></i></a>
              
                 </div>
                 <div class="col l3 m3 s3">
-                  <a href="https://web.facebook.com/courage.m.kosana">
+                  <a :href="Header.Sociallinks.Facebook.Url">
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-facebook-official fa-3x blue-grey-text lighten-3 fa-inverse"></i>
                     </span> 
                   </a>
                 </div>
                 <div class="col l3 m3 s3">
-                  <a href="https://twitter.com/couragemic">
+                  <a :href="Header.Sociallinks.Twitter.Url">
                    <span class="fa-stack fa-lg">
                       <i class="fa fa-twitter fa-3x blue-grey-text lighten-3 fa-inverse"></i>
                     </span> 
@@ -55,6 +54,9 @@
 <script>
 export default {
     name: 'HeaderComponent',
+    props:{
+      Header:{}
+    }
 }
 </script>
 <style scoped>
