@@ -6,7 +6,8 @@
           <div class="row left-align">
             <div class="col l12 m12 s12 "><i class="fa fa-map-marker blue-grey-text lighten-2 fa-1x" aria-hidden="true"> </i><span class="blue-grey-text linktext" >{{links.Location}}</span></div>
              <div class="col l12 m12 s12 "><i class="fa fa-envelope-o blue-grey-text lighten-2 fa-1x" aria-hidden="true"></i><a href="mailto:courage.kosana@gandasoft.com" class="linktext blue-text darken-1">courage.kosana@gandasoft.com</a></div>
-           
+             <div class="col l12 m12 s12 "><i class="fa fa-file-o blue-grey-text lighten-2 fa-1x" aria-hidden="true"></i><a href="https://s3.amazonaws.com/courage.gandasoft.com/cv/cv+for+courage.pdf" class="linktext blue-text darken-1" download>Download CV</a></div>
+          
           </div>
 
         </div>
